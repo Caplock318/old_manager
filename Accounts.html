@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品介绍-账款</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/sensors-init.js"></script>
+    <style>
+        @media only screen and (min-width: 320px) and (max-width: 360px){
+            html{
+                font-size: 0.813525rem;
+            }
+        }
+        @media only screen and (min-width: 360px) and (max-width: 375px){
+            html{
+                font-size: 0.96rem;
+            }
+        }
+        @media only screen and (min-width: 375px) and (max-width: 390px){
+            html{
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (min-width: 390px) and (max-width: 414px){
+            html{
+                font-size: 1.04rem;
+            }
+        }
+        @media only screen and (min-width: 414px) and (max-width: 640px){
+            html{
+                font-size: 1.104rem;
+            }
+        }
+        @media only screen and (min-width: 640px) {
+            html{
+                font-size: 1.706875rem;
+            }
+        }
+    </style>
+</head>
+<body style="width: 100%;margin-left: 0;margin-top: 0;background: white">
+
+<div class="container">
+
+    <!--
+    <div class="tabs" id="move-tab">
+        <a href="index.html" >融信</a>
+        <a href="Accounts.html" class="active">账款</a>
+        <a href="Distributor.html">订单融资</a>
+        <a href="Cloud_strip.html">云条</a>
+        <a href="Government_loan.html">政采贷</a>
+    </div>
+    -->
+
+     <!--flask测试版本-->
+     <div class="tabs" id="move-tab">
+        <a href="{{ url_for('index') }}" >融信</a>
+        <a href="{{ url_for('accounts_op') }}" class="active">账款</a>
+        <a href="{{ url_for('distributor_op') }}">订单融资</a>
+        <a href="{{ url_for('cloud_op') }}">云条</a>
+        <a href="{{ url_for('government_op') }}">政采贷</a>
+    </div>
+
+
+    
+
+
+    <!--账款-->
+     <!--背景图片和文字-->
+                <div class="head-content">
+                    <div class="head-total">
+                        <div class="large-span-text">
+                            <span class="span-title-one">账款融资/<span class="span-title-two">e点通</span></span>
+                        </div>
+                        <div class="medium-span-text">
+                            <span class="span-title-three">为满足中小企业快速回收应收账款、提高资金</span>
+                            <span class="span-title-three">周转效率而量身定制的产品</span>
+                        </div>
+                        <div class="head-line-point">
+                            <div class="head-line"></div>
+                            <div class="head-point"></div>
+                            <div class="head-line"></div>
+                        </div>
+                        <div class="small-span-text">
+                        <span class="span-title-four">基于供应商对采购商的应收账款，为供应商提供保</span>
+                        <span class="span-title-four">理融资、持有到期收款的全流程在线金融服务。</span>
+                        <span class="span-title-four">·账款融资不支持供应商拆分转让·</span>
+                        </div>
+                    </div>
+                    <img src="../static/image/ZKbackground.png" class="head-background">
+                </div>
+
+                <!--图标和特征-->
+                <div class="features">
+                    <div class="content-features">
+                        <div class="features-content">
+                            <img src="../static/image/icons/Rectangle.svg" >
+                            <span class="features-content-text">免抵押、免担保</span>
+                        </div>
+                        <div class="features-content">
+                            <img src="../static/image/icons/Group 32.svg" >
+                            <span class="features-content-text">&#8197最快T+0放款</span>
+                        </div>
+                        <div class="features-content">
+                            <img src="../static/image/icons/Computer.svg" >
+                            <span class="features-content-text">全流程线上操作</span>
+                        </div>
+                        <div class="features-content">
+                            <img src="../static/image/icons/Group 33.svg" >
+                            <span class="features-content-text">融资价格优惠</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                 <!--业务流程-->
+            <div class="process">
+
+        <div class="headline-process">
+            <div class="title-left">
+            </div>
+            <p class="title-process">业务流程</p>
+            <div class="title-right">
+            </div>
+        </div>
+
+        <div class="content-process">
+            <div class="process-content-one">
+                    <span class="process-content-text">
+                        采购商签发账款
+                    </span>
+            </div>
+            <img src="../static/image/icons/Combind.svg" class="process-connector">
+            <div class="process-content-two">
+                    <span class="process-content-text">
+                        供应商签收账款
+                    </span>
+                <span class="process-content-subtext">
+                        融资变现/持有到期
+                    </span>
+            </div>
+            <img src="../static/image/icons/Combind.svg" class="process-connector">
+            <div class="process-content-three">
+                    <span class="process-content-text">
+                        采购商到期还款
+                    </span>
+            </div>
+        </div>
+
+    </div>
+
+                <!--操作步骤new-->
+    <div class="move">
+        <div class="headline-process">
+            <div class="title-left">
+            </div>
+            <p class="title-process">操作步骤</p>
+            <div class="title-right">
+            </div>
+        </div>
+        <div class="content-move-total">
+
+            <div class="content-move">
+                <div class="move-content-title">
+                    <div class="move-title-icon">
+                           <div class="blue-icon-span" >
+                                <img class="blue-icon" src="../static/image/icons/moveblue.svg" alt="">
+                                <span class="blue-span" >第1步</span>
+                            </div>
+                    </div>
+                        <span class="span-move-title">注册及实名认证</span>
+                </div>
+
+                <div class="move-content-content">
+                    <div class="move-title-icon">
+                         <div class="move-title-left-V" id="vline-move-1">
+                         </div>
+                    </div>
+                    <div class="move-title-text">
+                        <span class="span-move-content" id="move-span-1">进入平台官网www.ccbscf.com注册企业账号，登录后上传实名认证材料，并在审核通过后邮寄纸质材料。</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-move">
+                <div class="move-content-title">
+                    <div class="move-title-icon">
+                            <div class="blue-icon-span" >
+                                <img class="blue-icon" src="../static/image/icons/moveblue.svg" alt="">
+                                <span class="blue-span" >第2步</span>
+                            </div>
+                    </div>
+                    <span class="span-move-title">开通产品</span>
+
+                </div>
+
+                <div class="move-content-content">
+                    <div class="move-title-icon">
+                       <div class="move-title-left-V" id="vline-move-2">
+                         </div>
+                    </div>
+                    <div class="move-title-text">
+                        <span class="span-move-content" id="move-span-2"> 进入平台官网，开通账款融资（e点通）产品。</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-move">
+                <div class="move-content-title">
+                    <div class="move-title-icon">
+
+                             <div class="blue-icon-span" >
+                                <img class="blue-icon" src="../static/image/icons/moveblue.svg" alt="">
+                                <span class="blue-span" >第3步</span>
+                            </div>
+
+                    </div>
+
+                        <span class="span-move-title">资格申请</span>
+
+                </div>
+
+                <div class="move-content-content">
+                    <div class="move-title-icon">
+                        <div class="move-title-left-V" id="vline-move-3">
+                         </div>
+                    </div>
+                    <div class="move-title-text">
+                        <span class="span-move-content" id="move-span-3">开通产品成功后，进行账款融资资格申请，填写相关信息。</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-move">
+                <div class="move-content-title">
+                    <div class="move-title-icon">
+
+                             <div class="blue-icon-span" >
+                                <img class="blue-icon" src="../static/image/icons/moveblue.svg" alt="">
+                                <span class="blue-span" >第4步</span>
+                            </div>
+
+                    </div>
+
+                        <span class="span-move-title">融资申请</span>
+
+                </div>
+
+                <div class="move-content-content">
+                    <div class="move-title-icon">
+                        <div class="move-title-left-V" id="vline-move-4">
+                         </div>
+                    </div>
+                    <div class="move-title-text">
+                        <span class="span-move-content" id="move-span-4">资格申请通过后，由采购商进行签发，签发后系统会自动签收，此时供应商即可申请融资并提交融资相关的贸易背景材料，如合同、发票等。</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-move">
+                <div class="move-content-title">
+                    <div class="move-title-icon">
+
+                             <div class="blue-icon-span" >
+                                <img class="blue-icon" src="../static/image/icons/moveblue.svg" alt="">
+                                <span class="blue-span" >第5步</span>
+                            </div>
+
+                    </div>
+
+                        <span class="span-move-title">缴费及收款</span>
+
+                </div>
+
+                <div class="move-content-content">
+                    <div class="move-title-icon">
+                        <div class="move-title-left-V" id="vline-move-5">
+                         </div>
+                    </div>
+                    <div class="move-title-text">
+                        <span class="span-move-content" id="move-span-5">在融资材料审核无误的情况下，平台会发送缴费通知单，待链条企业缴费完成，系统会自动放款。</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+                <!--常见问题-->
+                <div class="problem">
+                    <div class="headline-process">
+                        <div class="title-left">
+                        </div>
+                        <p class="title-process">常见问题</p>
+                        <div class="title-right">
+                        </div>
+                    </div>
+                    <div class="total-problem">
+                        <div class="content-problem">
+                            <div class="problem-content-question">
+                                <div class="question-icon">
+                                    <img src="../static/image/icons/question.svg" class="icon-question">
+                                </div>
+                                <div class="question-text">
+                                    <span class="span-question-text">账款融资（e点通）在不融资的情况下，是否可以进行流转或持有到期？</span>
+                                </div>
+                            </div>
+                            <div class="problem-content-answer">
+                                <div class="title-left-V" id="vline-question1">
+                                </div>
+                                <div class="answer-text">
+                                    <span class="span-answer-text" id="question-1">账款融资（e点通）不支持流转，可以持有到期。</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-problem">
+                            <div class="problem-content-question">
+                                <div class="question-icon">
+
+                                    <img src="../static/image/icons/question.svg">
+                                </div>
+                                <div class="question-text">
+                                    <span class="span-question-text">在持有到期的情况下，承诺付款日期到了，我们就能收到货款吗？</span>
+                                </div>
+                            </div>
+                            <div class="problem-content-answer">
+                                <div class="title-left-V" id="vline-question2">
+                                </div>
+                                <div class="answer-text">
+                                <span class="span-answer-text" id="question-2">企业签收账款融资后，如未进行融资，则在承诺付款日期到期时，平台会通知承诺付款方付款，在承诺付款方付款后，款项将自动划转到企业在平台绑定的银行账户。</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--返回顶部图标
+    <div class="back-to-top" id="return" >
+        <img src="../static/image/icons/returntop.png">
+    </div>
+    -->
+</div>
+
+</body>
+<script>
+     var leftheight1=document.getElementById('vline-question1');
+    var rightheight1=document.getElementById('question-1');
+    leftheight1.style.height=rightheight1.offsetHeight+'px';
+
+    var leftheight2=document.getElementById('vline-question2');
+    var rightheight2=document.getElementById('question-2');
+    leftheight2.style.height=rightheight2.offsetHeight+'px';
+
+    var leftheight3=document.getElementById('vline-move-1');
+    var rightheight3=document.getElementById('move-span-1');
+    leftheight3.style.height=rightheight3.offsetHeight+'px';
+
+    var leftheight4=document.getElementById('vline-move-2');
+    var rightheight4=document.getElementById('move-span-2');
+    leftheight4.style.height=rightheight4.offsetHeight+'px';
+
+    var leftheight5=document.getElementById('vline-move-3');
+    var rightheight5=document.getElementById('move-span-3');
+    leftheight5.style.height=rightheight5.offsetHeight+'px';
+
+    var leftheight6=document.getElementById('vline-move-4');
+    var rightheight6=document.getElementById('move-span-4');
+    leftheight6.style.height=rightheight6.offsetHeight+'px';
+
+    var leftheight7=document.getElementById('vline-move-5');
+    var rightheight7=document.getElementById('move-span-5');
+    leftheight7.style.height=rightheight7.offsetHeight+'px';
+
+
+</script>
+<script>
+    /*--返回顶部按钮的js代码*/
+    var backbutton = $('#return');
+
+    function backtotop() {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 200);
+    }
+
+    backbutton.on('click', backtotop);
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() >($(window).height()/2))
+            backbutton.fadeIn();
+        else
+            backbutton.fadeOut();
+    });
+
+    $(window).trigger('scroll');
+</script>
+<script>
+
+
+
+/*--底部问题部分短图片适应长文本的js代码*/
+    window.onload=function cut() {
+        if($('.answer-icon').height()>=$('.answer-text').height()){
+            $('.answer-icon-img').css("height",$('.answer-text').height())
+        }else{
+            $('.answer-text').css("height",$('.answer-icon-img').height())
+        }
+    }
+
+</script>
+<script>
+    /*顶部tab组件吸顶显示的js代码 */
+    $(function () {
+        var a=$('#move-tab'),
+            b=a.offset();
+        $(document).on('scroll',function () {
+            var c=$(document).scrollTop();
+            if(b.top<c){
+                a.removeClass('tabs');
+                a.addClass('tabthree');
+            }else{
+                a.removeClass('tabthree');
+                a.addClass('tabs');
+            }
+        })
+    });
+</script>
+</html>

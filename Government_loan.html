@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品介绍-政采贷</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/sensors-init.js"></script>
+    <style>
+        @media only screen and (min-width: 320px) and (max-width: 360px){
+            html{
+                font-size: 0.813525rem;
+            }
+        }
+        @media only screen and (min-width: 360px) and (max-width: 375px){
+            html{
+                font-size: 0.96rem;
+            }
+        }
+        @media only screen and (min-width: 375px) and (max-width: 390px){
+            html{
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (min-width: 390px) and (max-width: 414px){
+            html{
+                font-size: 1.04rem;
+            }
+        }
+        @media only screen and (min-width: 414px) and (max-width: 640px){
+            html{
+                font-size: 1.104rem;
+            }
+        }
+        @media only screen and (min-width: 640px) {
+            html{
+                font-size: 1.706875rem;
+            }
+        }
+    </style>
+</head>
+<body style="width: 100%;margin-left: 0;margin-top: 0;background: white;">
+
+    <!--
+    <div class="tabs" id="move-tab">
+        <a href="index.html" >融信</a>
+        <a href="Accounts.html">账款</a>
+        <a href="Distributor.html">订单融资</a>
+        <a href="Cloud_strip.html">云条</a>
+        <a href="Government_loan.html" class="active">政采贷</a>
+    </div>
+    -->
+    <!--flask测试版本-->
+     <div class="tabs" id="move-tab">
+        <a href="{{ url_for('index') }}" >融信</a>
+        <a href="{{ url_for('accounts_op') }}" >账款</a>
+        <a href="{{ url_for('distributor_op') }}">订单融资</a>
+        <a href="{{ url_for('cloud_op') }}">云条</a>
+        <a href="{{ url_for('government_op') }}" class="active">政采贷</a>
+    </div>
+    
+    
+    <!--政采贷-->
+    <div class="image-text" >
+        <img src="../static/image/icons/ZCD.svg" class="zcd-background">
+        <span class="zcd-content-text" >政采贷产品正在建设中，敬请期待</span>
+    </div>
+    <!--返回顶部图标-->
+    <!--
+    <div class="back-to-top">
+        <img src="../static/image/icons/returntop.png">
+    </div>
+    -->
+</body>
+<script>
+    document.onreadystatechange=function () {
+        if(document.readyState=="complete"){
+            document.body.style.display="block";
+        }else{
+            document.body.style.display="none";
+        };
+    };
+</script>
+<script>
+/*--返回顶部按钮的js代码*/
+   var backbutton = $('#return');
+
+    function backtotop() {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 200);
+    }
+
+    backbutton.on('click', backtotop);
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() >($(window).height()/2))
+            backbutton.fadeIn();
+        else
+            backbutton.fadeOut();
+    });
+
+    $(window).trigger('scroll');
+
+</script>
+<script>
+    /*顶部tab组件吸顶显示的js代码 */
+    $(function () {
+        var a=$('#move-tab'),
+            b=a.offset();
+        $(document).on('scroll',function () {
+            var c=$(document).scrollTop();
+            if(b.top<c){
+                a.removeClass('tabs');
+                a.addClass('tabthree');
+            }else{
+                a.removeClass('tabthree');
+                a.addClass('tabs');
+            }
+        })
+    });
+</script>
+</html>
