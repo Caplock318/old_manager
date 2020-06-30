@@ -1,0 +1,359 @@
+.swiper-container {
+    width: 100%;
+
+}
+.swiper-slide{
+    width: 100%;
+}
+
+.head-content {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.head-total {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    z-index: 2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    z-index: 2;
+
+}
+
+.head-background {
+    margin-top: 2%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.span-title-one {
+    color: white;
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+}
+
+.span-title-two {
+    margin-top: 3%;
+    color: white;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+}
+.span-title-four {
+    margin-top: 2%;
+    color: white;
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+}
+.span-title-three {
+    margin-top: 3%;
+    color: white;
+    font-family: "Microsoft YaHei UI";
+}
+
+
+.span-title-left {
+    width: 30%;
+    height: 2px;
+    background: white;
+}
+.span-title-right {
+    width: 30%;
+    height: 2px;
+    background: white;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    box-sizing: border-box;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.tabs a {
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 15%;
+    color: #0fa5ff;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(91, 77, 79, 0.29);
+}
+
+.tabs a.active {
+    border-bottom: 2px solid #0fa5ff;
+    margin-top: -2px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 64px 39px;
+    -moz-background-size: 64px 39px;
+    -o-background-size: 64px 39px;
+    background-size: 64px 39px;
+    background-position: left top;
+    color: #0fa5ff;
+}
+
+
+.advantage {
+    width: 100%;
+    margin-top: 5%;
+}
+
+
+.title-process {
+    font-family: "Microsoft YaHei UI";
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0fa5ff;
+}
+
+.titletwo {
+    font-family: "Adobe Garamond Pro";
+    text-align: left;
+    font-size: medium;
+}
+
+.process {
+    width: 87%;
+    margin-left: 6.5%;
+}
+
+.headline-process {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-left {
+    width: 21%;
+    height: 2px;
+    border-top-width: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, #F0F5FD, #CFD8E7);
+}
+
+.title-right {
+    width: 21%;
+    height: 2px;
+    border-top-width: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, #CFD8E7, #F0F5FD);
+}
+
+.content-process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process-content {
+    width: 72.5%;
+    background-color: #EBF2FF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.process-content-text {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    font-size: medium;
+    font-weight: bold;
+}
+.process-content-steptext{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+    font-weight: bold;
+}
+.process-content-subtext {
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    font-size: medium;
+}
+.process-connector{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.features{
+    width: 87%;
+    margin-left: 6.5%;
+}
+.features-content{
+    width: 50%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-features{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.advantage-content {
+
+    background: aliceblue;
+
+}
+
+.contentleft {
+    width: 45%;
+    float: left;
+}
+
+.contentright {
+    width: 45%;
+    float: right;
+}
+
+.contentone {
+    font-family: 楷体;
+    text-align: center;
+    font-size: medium;
+
+}
+
+.step {
+    width: 87%;
+    margin-left: 6.5%;
+}
+.content-step-one{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.content-step-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrowdown{
+    float: right;
+}
+.step-content{
+    width: 25%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.problem{
+    width: 87%;
+    margin-left: 6.5%;
+}
+.total-problem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.content-problem{
+    width: 100%;
+    margin-top: 5%;
+    background-color: #EBF2FF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.problem-content-question{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.question-icon{
+    width: 5%;
+    float: left;
+    margin-top: 2%;
+}
+.icon-question{
+
+}
+.question-text{
+    width: 85%;
+    float: left;
+    margin-left: 5%;
+}
+.problem-content-answer{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.answer-icon{
+    width: 5%;
+    float: left;
+}
+.v-line{
+
+}
+
+.answer-text{
+    width: 85%;
+    float: left;
+    margin-left: 5%;
+}
+.content-two {
+    font-family: 楷体;
+    text-align: center;
+    font-size: medium;
+}
+
+.process-image {
+    width: 100%;
+    border-radius: 16px;
+}
+.back-to-top{
+    position: fixed;
+    bottom:2%;
+    right:2%;
+}
